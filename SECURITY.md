@@ -18,5 +18,5 @@ If you find a security vulnerability, email us at old-security@company.com.
 
 # Security Policy
 
-If you discover a security vulnerability, please report it to us at global-sec@enterprise.com.
+If you discover a security vulnerability, please report it to us at security@jig-demo.io.
 <!-- JIG:END -->
