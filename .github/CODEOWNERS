@@ -1,0 +1,10 @@
+<!-- JIG:START -->
+> [!IMPORTANT]
+> **Managed by Jig** — Auto-generated compliance content. Manual edits _inside this block_ will be overwritten on next sync.
+
+# Managed by Jig GitOps
+# Default owners for the repository.
+# Teams can add more specific owners below this line.
+
+* @jig-test-custome/payments
+<!-- JIG:END -->
