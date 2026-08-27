@@ -24,8 +24,8 @@ jobs:
           tf_file = sys.argv[1]
           modules_to_check = [
             {"source": "terraform-aws-modules/vpc/aws", "check_type": "version", "desired": "5.3.0"},
-            {"source": "terraform-aws-modules/s3-bucket/aws", "check_type": "version", "desired": "4.0.0"},
             {"source": "terraform-aws-modules/rds/aws", "check_type": "version", "desired": "6.3.0"},
+            {"source": "terraform-aws-modules/s3-bucket/aws", "check_type": "version", "desired": "4.0.0"},
           ]
 
           with open(tf_file) as f:
@@ -73,8 +73,8 @@ jobs:
             echo ""
             echo "Module version policy violation detected."
             echo "Expected module 'terraform-aws-modules/vpc/aws' to use version='5.3.0'."
-            echo "Expected module 'terraform-aws-modules/s3-bucket/aws' to use version='4.0.0'."
             echo "Expected module 'terraform-aws-modules/rds/aws' to use version='6.3.0'."
+            echo "Expected module 'terraform-aws-modules/s3-bucket/aws' to use version='4.0.0'."
             echo "Run 'jig run' or merge the Jig reconciliation PR to fix this."
             exit 1
           fi
