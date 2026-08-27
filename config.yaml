@@ -1,29 +1,23 @@
-# Application configuration
-# NOTE: This file has formatting issues - Jig will auto-fix spacing
 app:
-  name:    demo-application
-  version:    1.0.0
-  environment:    production
-
-database:
-  host:    db.internal
-  port:    5432
-  name:    appdb
-  pool_size:    10
-
+    environment: production
+    name: demo-application
+    version: 1.0.0
 cache:
-  backend:    redis
-  host:    cache.internal
-  port:    6379
-  ttl:    3600
-
-logging:
-  level:    info
-  format:    json
-  output:    stdout
-
+    backend: redis
+    host: cache.internal
+    port: 6379
+    ttl: 3600
+database:
+    host: db.internal
+    name: appdb
+    pool_size: 10
+    port: 5432
 features:
-  feature_flags:
-    -    enable_new_ui
-    -    enable_analytics
-    -    dark_mode
+    feature_flags:
+        - enable_new_ui
+        - enable_analytics
+        - dark_mode
+logging:
+    format: json
+    level: info
+    output: stdout
