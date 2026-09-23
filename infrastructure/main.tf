@@ -7,7 +7,7 @@ terraform {
 # VPC Module - outdated version (5.0.0), Jig will update to 5.1.0
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "5.6.0"
+  version = "5.8.0"
   name    = "demo-vpc"
   cidr    = "10.0.0.0/16"
 
@@ -27,7 +27,7 @@ module "vpc" {
 # RDS Module - outdated version (6.1.1), Jig will update to 6.3.0
 module "db" {
   source     = "terraform-aws-modules/rds/aws"
-  version    = "6.4.0"
+  version    = "7.9.0"
   identifier = "demo-db"
 
   engine            = "mysql"
