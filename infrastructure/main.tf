@@ -7,7 +7,7 @@ terraform {
 # VPC Module - outdated version (5.0.0), Jig will update to 5.1.0
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = ".0"
+  version = "6.0.0"
   name    = "demo-vpc"
   cidr    = "10.0.0.0/16"
 
@@ -51,7 +51,7 @@ module "db" {
 # S3 Module - also outdated
 module "s3_bucket" {
   source  = "terraform-aws-modules/s3-bucket/aws"
-  version = "4.0.0"
+  version = "7.0.0"
   bucket  = "demo-app-artifacts"
   acl     = "private"
 
